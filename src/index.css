@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rádio Voluntários da Pátria — Design System
+   Bold broadcast aesthetic: deep black, vibrant red, crisp white.
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 40% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 12%;
+
+    /* Brand blue #0B3D91 */
+    --primary: 220 86% 30%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 80% 45%;
+
+    --secondary: 220 50% 14%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 96%;
+    --muted-foreground: 220 15% 40%;
+
+    /* Brand yellow #FFC107 */
+    --accent: 45 100% 51%;
+    --accent-foreground: 220 86% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 220 86% 30%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --live: 0 90% 55%;
+    --live-glow: 0 100% 65%;
+    --surface-dark: 220 50% 10%;
+    --surface-darker: 220 55% 7%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(220 55% 8%) 0%, hsl(220 86% 25%) 60%, hsl(25 95% 53%) 100%);
+    --gradient-red: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(220 50% 10%) 0%, hsl(220 55% 6%) 100%);
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(220 55% 5% / 0.85) 100%);
+
+    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.5);
+    --shadow-red: 0 10px 40px -10px hsl(var(--primary) / 0.5);
+    --shadow-elegant: 0 20px 60px -20px hsl(220 50% 10% / 0.4);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 55% 7%;
+    --foreground: 0 0% 98%;
+    --card: 220 50% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 50% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 220 86% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 80% 55%;
+    --secondary: 220 40% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 40% 16%;
+    --muted-foreground: 220 15% 70%;
+    --accent: 45 100% 51%;
+    --accent-foreground: 220 86% 20%;
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 40% 18%;
+    --input: 220 40% 18%;
+    --ring: 220 86% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "cv01";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-gradient-red { background: var(--gradient-red); }
+  .bg-gradient-dark { background: var(--gradient-dark); }
+  .bg-gradient-overlay { background: var(--gradient-overlay); }
+
+  .bg-radio-gradient {
+    background:
+      radial-gradient(circle at 25% 30%, rgba(66, 165, 245, 0.5), transparent 35%),
+      radial-gradient(circle at 75% 70%, rgba(30, 136, 229, 0.45), transparent 35%),
+      radial-gradient(circle at 50% 50%, rgba(13, 71, 161, 0.6), transparent 55%),
+      linear-gradient(
+        135deg,
+        #031B4E 0%,     
+        #062A78 20%,    
+        #0D47A1 40%,
+        #1565C0 65%,
+        #1E88E5 85%,
+        #42A5F5 100%
+      );
+  }
+
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-red { box-shadow: var(--shadow-red); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+
+  .transition-smooth { transition: var(--transition-smooth); }
+  .transition-bounce { transition: var(--transition-bounce); }
+
+  .text-balance { text-wrap: balance; }
+}
+
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 hsl(var(--live) / 0.7); }
+  50% { opacity: 0.95; box-shadow: 0 0 0 8px hsl(var(--live) / 0); }
+}
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1); }
+}
+
+@keyframes float-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-pulse-live { animation: pulse-live 2s ease-in-out infinite; }
+.animate-wave { animation: wave 1s ease-in-out infinite; }
+.animate-float-in { animation: float-in 0.6s ease-out both; }
