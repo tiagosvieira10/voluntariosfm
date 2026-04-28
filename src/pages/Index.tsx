@@ -71,7 +71,7 @@ const Index = () => {
         </div>
       </section> */}
 
-      <TopMusicSection/>
+      
 
       {/* ÚLTIMAS NOTÍCIAS */}
       <section className="container py-12">
@@ -118,6 +118,26 @@ const Index = () => {
         </div>
       </section>
 
+      <TopMusicSection/>
+
+      {/* CTA WHATSAPP */}
+      <section className="container py-20">
+        <div className="rounded-3xl bg-gradient-hero p-10 sm:p-16 text-center text-background shadow-elegant relative overflow-hidden">
+          <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-primary/30 blur-3xl" />
+          <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-primary/20 blur-3xl" />
+          <div className="relative">
+            <h2 className="font-display text-3xl sm:text-5xl uppercase max-w-2xl mx-auto text-balance">
+              Mande seu recado <span className="text-orange-500">no ar</span>
+            </h2>
+            <p className="mt-4 text-background/80 max-w-xl mx-auto">
+              Peça aquela música, mande um abraço ou fale com a equipe direto pelo WhatsApp.
+            </p>
+            <div className="mt-8 flex justify-center">
+              <WhatsAppButton size="lg" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* PROGRAMAÇÃO RESUMIDA */}
       <section className="py-20 bg-radio-gradient text-background mt-12">
@@ -145,7 +165,7 @@ const Index = () => {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="font-display text-lg sm:text-xl uppercase truncate">{p.title}</p>
-                  {p.host && <p className="text-sm text-background/60">com {p.host}</p>}
+                  {/* {p.host && <p className="text-sm text-background/60">com {p.host}</p>} */}
                 </div>
               </div>
             ))}
@@ -153,24 +173,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA WHATSAPP */}
-      <section className="container py-20">
-        <div className="rounded-3xl bg-gradient-hero p-10 sm:p-16 text-center text-background shadow-elegant relative overflow-hidden">
-          <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-primary/30 blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-primary/20 blur-3xl" />
-          <div className="relative">
-            <h2 className="font-display text-3xl sm:text-5xl uppercase max-w-2xl mx-auto text-balance">
-              Mande seu recado <span className="text-orange-500">no ar</span>
-            </h2>
-            <p className="mt-4 text-background/80 max-w-xl mx-auto">
-              Peça aquela música, mande um abraço ou fale com a equipe direto pelo WhatsApp.
-            </p>
-            <div className="mt-8 flex justify-center">
-              <WhatsAppButton size="lg" />
-            </div>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };

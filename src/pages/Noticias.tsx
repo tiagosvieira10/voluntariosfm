@@ -37,11 +37,11 @@ const Noticias = () => {
         </div>
 
         <div className="container relative py-20 sm:py-28 lg:py-32">
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-4 flex items-center gap-2">
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-blue-800 mb-4 flex items-center gap-2">
             <Newspaper className="h-3.5 w-3.5" /> Fique por dentro
           </p>
           <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl uppercase leading-[0.9] text-balance max-w-3xl">
-            Notícias da <span className="text-accent">cidade</span>
+            Notícias da cidade
           </h1>
           <p className="mt-6 text-lg text-background/75 max-w-xl leading-relaxed">
             As principais informações da sua cidade e da região, atualizadas

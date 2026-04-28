@@ -1,7 +1,7 @@
 import newsHero from "@/assets/programacao-hero.jpg";
 import { Layout } from "@/components/Layout";
 import { dayOrder, schedule } from "@/config/schedule";
-import { Calendar, User } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 
 const Programacao = () => {
@@ -64,11 +64,11 @@ const Programacao = () => {
                       <p className="font-display text-lg sm:text-xl uppercase tracking-wide truncate">
                         {p.title}
                       </p>
-                      {p.host && (
+                      {/* {p.host && (
                         <p className="text-sm text-muted-foreground flex items-center gap-1.5 mt-0.5">
                           <User className="h-3 w-3" /> {p.host}
                         </p>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 ))}
