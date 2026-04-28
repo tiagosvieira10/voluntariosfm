@@ -1,5 +1,7 @@
 import heroImg from "@/assets/hero-cara-nova.jpg";
 import { Layout } from "@/components/Layout";
+import { LiveSection } from "@/components/LiveSection";
+import { PodcastSection } from "@/components/PodcastSection";
 import { TopMusicSection } from "@/components/TopMusicSection";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { getNews } from "@/config/news";
@@ -50,7 +52,11 @@ const Index = () => {
           </button>
           <WhatsAppButton size="lg" />
         </div>
+        {/* Linha sutil de separação */}
+        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-80" />
       </section>
+
+      <TopMusicSection/>
 
       {/* DESTAQUES */}
       {/* <section className="container py-20">
@@ -70,8 +76,6 @@ const Index = () => {
           ))}
         </div>
       </section> */}
-
-      
 
       {/* ÚLTIMAS NOTÍCIAS */}
       <section className="container py-12">
@@ -118,26 +122,9 @@ const Index = () => {
         </div>
       </section>
 
-      <TopMusicSection/>
+      <PodcastSection/>
 
-      {/* CTA WHATSAPP */}
-      <section className="container py-20">
-        <div className="rounded-3xl bg-gradient-hero p-10 sm:p-16 text-center text-background shadow-elegant relative overflow-hidden">
-          <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-primary/30 blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-primary/20 blur-3xl" />
-          <div className="relative">
-            <h2 className="font-display text-3xl sm:text-5xl uppercase max-w-2xl mx-auto text-balance">
-              Mande seu recado <span className="text-orange-500">no ar</span>
-            </h2>
-            <p className="mt-4 text-background/80 max-w-xl mx-auto">
-              Peça aquela música, mande um abraço ou fale com a equipe direto pelo WhatsApp.
-            </p>
-            <div className="mt-8 flex justify-center">
-              <WhatsAppButton size="lg" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <LiveSection/>
 
       {/* PROGRAMAÇÃO RESUMIDA */}
       <section className="py-20 bg-radio-gradient text-background mt-12">
@@ -169,6 +156,25 @@ const Index = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA WHATSAPP */}
+      <section className="container py-20">
+        <div className="rounded-3xl bg-gradient-hero p-10 sm:p-16 text-center text-background shadow-elegant relative overflow-hidden">
+          <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-primary/30 blur-3xl" />
+          <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-primary/20 blur-3xl" />
+          <div className="relative">
+            <h2 className="font-display text-3xl sm:text-5xl uppercase max-w-2xl mx-auto text-balance">
+              Mande seu recado <span className="text-orange-500">no ar</span>
+            </h2>
+            <p className="mt-4 text-background/80 max-w-xl mx-auto">
+              Peça aquela música, mande um abraço ou fale com a equipe direto pelo WhatsApp.
+            </p>
+            <div className="mt-8 flex justify-center">
+              <WhatsAppButton size="lg" />
+            </div>
           </div>
         </div>
       </section>

@@ -33,11 +33,6 @@ export const TopMusicSection = () => {
 
   return (
     <section className="relative bg-radio-gradient py-12 sm:py-16 lg:py-20 overflow-hidden">
-      {/* background gradient */}
-      {/* <div className="absolute inset-0 bg-gradient-dark" aria-hidden />
-      <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-primary/30 blur-3xl" aria-hidden />
-      <div className="absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-accent/20 blur-3xl" aria-hidden /> */}
-
       <div className="container relative px-4 sm:px-6 lg:px-8">
         <div className="mb-6 sm:mb-10 text-center sm:text-left">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-2 inline-flex items-center gap-2">
