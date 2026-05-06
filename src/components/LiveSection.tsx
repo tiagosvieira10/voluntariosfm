@@ -1,11 +1,10 @@
 import { Radio } from "lucide-react";
 
 // Channel ID do YouTube da rádio (@voluntariosfm)
-const CHANNEL_ID = "UCZJk3kZV0lqX0lZqS0uV3lg";
+const LIVE_VIDEO_ID = "dJ-ZBVS_Sew";
 
 export const LiveSection = () => {
-  const liveSrc = `https://www.youtube.com/embed/live_stream?channel=${CHANNEL_ID}&autoplay=0`;
-
+  const liveSrc = `https://www.youtube.com/embed/${LIVE_VIDEO_ID}?autoplay=0`;
   return (
     <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden">
       <div className="absolute inset-0" aria-hidden />
