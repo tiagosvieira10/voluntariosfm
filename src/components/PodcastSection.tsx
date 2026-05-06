@@ -72,13 +72,15 @@ export const PodcastSection = () => {
 
       <div className="container relative px-4 sm:px-6 lg:px-8">
       <div className="mb-6 sm:mb-10 text-center sm:text-left">
+        <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-2 inline-flex items-center gap-2">
+          <Mic className="h-3.5 w-3.5" /> últimos episódios
+        </p>
         <h2 className="font-display flex items-center justify-center sm:justify-start gap-2 text-3xl sm:text-4xl lg:text-5xl uppercase text-background leading-none"> 
-          <Mic className="h-[0.9em] w-[0.9em] text-white relative top-[1px]" />
-          <span className="text-accent">Podcasts</span>
+          <span className="">Podcasts</span>
         </h2>
 
         <p className="mt-2 text-background/70 text-sm sm:text-base">
-          Confira os últimos episódios
+          Ouça novamente os podcasts que você perdeu
         </p>
       </div>
 

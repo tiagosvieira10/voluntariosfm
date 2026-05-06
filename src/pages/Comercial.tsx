@@ -6,10 +6,10 @@ import { Briefcase, Mail, Phone, Sparkles, Target, TrendingUp, Users } from "luc
 const Comercial = () => {
   return (
     <Layout>
-      <section className="relative bg-surface-darker text-background py-20 sm:py-28 overflow-hidden">
+      <section className="relative bg-radio-gradient text-background py-20 sm:py-28 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-yellow-700/20 blur-3xl" />
-          <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-yellow-300/30 blur-3xl" />
+          <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-orange-600/20 blur-3xl" />
+          <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-orange-500/30 blur-2xl" />
         </div>
         <div className="container relative">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-orange-500 mb-3 flex items-center gap-2">
@@ -66,25 +66,25 @@ const Comercial = () => {
 
       {/* Planos futuros */}
       <section className="container pb-12">
-        <div className="rounded-3xl bg-gradient-dark text-background p-10 sm:p-14 relative overflow-hidden">
+        <div className="rounded-3xl bg-radio-gradient text-background p-10 sm:p-14 relative overflow-hidden">
           <div className="absolute top-0 right-0 h-full w-1/2 bg-gradient-red opacity-10" />
           <div className="relative grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <Sparkles className="h-8 w-8 text-yellow-500 mb-4" />
+              <Sparkles className="h-8 w-8 text-accent mb-4" />
               <h2 className="font-display text-3xl sm:text-4xl uppercase mb-4">
-                Planos de publicidade <span className="text-yellow-500">em breve</span>
+                Planos de publicidade <span className="text-accent">voluntários</span>
               </h2>
               <p className="text-background/70 leading-relaxed">
-                Estamos preparando pacotes especiais com spots, patrocínios de programa e ações combinadas com redes sociais.
-                Entre em contato e receba uma proposta personalizada antes do lançamento.
+                Estamos com pacotes especiais de propagandas, patrocínios de programa e ações combinadas com redes sociais.
+                Entre em contato e receba uma proposta personalizada.
               </p>
             </div>
             <div className="space-y-3">
-              {["Spot 30s", "Patrocínio de programa", "Citação ao vivo", "Promoções de Eventos"].map((item) => (
+              {["Propagandas", "Patrocínio de programa", "Citação ao vivo", "Promoções de Eventos"].map((item) => (
                 <div key={item} className="flex items-center gap-3 p-4 rounded-xl bg-secondary/40 border border-border/10">
-                  <div className="h-2 w-2 rounded-full bg-primary" />
+                  <div className="h-2 w-2 rounded-full bg-accent" />
                   <span className="font-semibold">{item}</span>
-                  <span className="ml-auto text-xs text-background/50 uppercase tracking-widest">Sob consulta</span>
+                  <span className="ml-auto text-xs text-background/50 uppercase tracking-widest">entre em contato</span>
                 </div>
               ))}
             </div>

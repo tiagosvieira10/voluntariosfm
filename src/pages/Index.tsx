@@ -1,4 +1,5 @@
 import heroImg from "@/assets/hero-cara-nova.jpg";
+import { BannerSection } from "@/components/BannerSection";
 import { Layout } from "@/components/Layout";
 import { LiveSection } from "@/components/LiveSection";
 import { PodcastSection } from "@/components/PodcastSection";
@@ -53,7 +54,7 @@ const Index = () => {
           <WhatsAppButton size="lg" />
         </div>
         {/* Linha sutil de separação */}
-        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-80" />
+        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-orange-700/90 to-transparent opacity-80" />
       </section>
 
       <TopMusicSection/>
@@ -159,6 +160,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <BannerSection/>
 
       {/* CTA WHATSAPP */}
       <section className="container py-20">

@@ -11,17 +11,17 @@ export const siteConfig = {
   streamUrl: "https://stream01.ouveai.com.br:1216/stream", // exemplo — troque aqui
 
   // Contatos
-  phone: "(11) 0000-0000",
-  whatsapp: "5511000000000", // formato internacional sem +
+  phone: "(87) 9 9150-1009",
+  whatsapp: "5587991501009", // formato internacional sem +
   whatsappMessage: "Olá! Vim pelo site da Rádio Voluntários da Pátria.",
-  email: "contato@voluntariosfm.com.br",
-  address: "Rua Exemplo, 123 — Centro, Sua Cidade — SP",
+  email: "contatocomercial@voluntariosfm.com.br",
+  address: "Travessa Valdir Leopércio, 23. Aeroporto, Ouricuri - PE",
 
   // Comercial
-  commercialWhatsapp: "5511000000000",
+  commercialWhatsapp: "5587991501009",
   commercialWhatsappMessage: "Olá! Tenho interesse em anunciar na Rádio Voluntários.",
   commercialEmail: "comercial@voluntariosfm.com.br",
-  commercialPhone: "(11) 0000-0000",
+  commercialPhone: "(87) 9 9150-1009",
 
   // Redes sociais
   social: {
