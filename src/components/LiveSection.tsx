@@ -1,7 +1,7 @@
 import { Radio } from "lucide-react";
 
 // Channel ID do YouTube da rádio (@voluntariosfm)
-const LIVE_VIDEO_ID = "dJ-ZBVS_Sew";
+const LIVE_VIDEO_ID = "hcs_FWbA-q8";
 
 export const LiveSection = () => {
   const liveSrc = `https://www.youtube.com/embed/${LIVE_VIDEO_ID}?autoplay=0`;
