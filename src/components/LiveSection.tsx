@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
 
 // Channel ID do YouTube da rádio (@voluntariosfm)
-const CHANNEL_ID = "UCZJk3kZV0lqX0lZqS0uV3lg";
+const CHANNEL_ID = "UChHCu-_ueX-2345dj4TZG6g";
 
 export const LiveSection = () => {
   const [videoId, setVideoId] = useState<string | null>(null);
