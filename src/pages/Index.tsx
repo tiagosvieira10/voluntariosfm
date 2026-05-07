@@ -54,8 +54,10 @@ const Index = () => {
           <WhatsAppButton size="lg" />
         </div>
         {/* Linha sutil de separação */}
-        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-orange-700/90 to-transparent opacity-80" />
+        {/* <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-orange-700/90 to-transparent opacity-80" /> */}
       </section>
+
+      <LiveSection/>
 
       <TopMusicSection/>
 
@@ -125,7 +127,7 @@ const Index = () => {
 
       <PodcastSection/>
 
-      <LiveSection/>
+      <BannerSection/>
 
       {/* PROGRAMAÇÃO RESUMIDA */}
       <section className="py-20 bg-radio-gradient text-background mt-12">
@@ -160,8 +162,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <BannerSection/>
 
       {/* CTA WHATSAPP */}
       <section className="container py-20">

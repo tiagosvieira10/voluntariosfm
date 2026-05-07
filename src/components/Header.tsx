@@ -19,14 +19,18 @@ export const Header = () => {
     <header className="sticky top-0 z-40 w-full bg-radio-gradient border-b border-white/10 backdrop-blur-xl">
       <div className="container flex h-16 sm:h-20 items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5 group" onClick={() => setOpen(false)}>
-          <div className="flex h-10 w-10 items-center justify-center  transition-bounce group-hover:scale-110">
-            <img src={logo} alt="logo Voluntários Fm" />
+          <div className="flex h-10 w-10 items-center justify-center transition-bounce group-hover:scale-110">
+            <img 
+              src={logo} 
+              alt="logo Voluntários Fm"
+              className="rounded-full border border-white/20" 
+            />
           </div>
           <div className="leading-tight text-right">
             <p className="font-display text-lg sm:text-xl font-bold uppercase tracking-wider text-background">
               Voluntários
             </p>
-            <p className="text-[10px] sm:text-xs text-orange-500 font-semibold uppercase tracking-[0.2em] -mt-1">
+            <p className="text-[10px] sm:text-xs text-background font-semibold uppercase tracking-[0.2em] -mt-1">
               Fm 100.9
             </p>
           </div>
